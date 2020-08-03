@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+
+  rabbitmq:
+    image: rabbitmq
+    env_file: './env.d/rabbitmq.env'
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq
+    ports:
+      - 5672:5672
+    deploy:
+      replicas: 1
+
+volumes:
+  rabbitmq-data:
