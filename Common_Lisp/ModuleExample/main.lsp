@@ -1,0 +1,5 @@
+(load "math/arithops.lsp")
+(format t "~D~%" (mult 3 5))
+(format t "~D~%" (sum 8 10))
+(format t "~D~%" (sub 20 5))
+(format t "~D~%" (div 4 2))
